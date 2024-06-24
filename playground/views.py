@@ -10,4 +10,5 @@ def say_hello(request):
     # we can pull data from db
     # transform
     # send email
-    return HttpResponse('Hello World')
+    # return HttpResponse('Hello World') 
+    return render(request, 'hello.html', {'name': 'Mosh'})
